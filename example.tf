@@ -1,3 +1,6 @@
+variable "MY_ACCESS_KEY" {}
+variable "MY_SECRET_KEY" {}
+
 provider "aws" {
 	access_key = "${var.MY_ACCESS_KEY}"
 	secret_key = "${var.MY_SECRET_KEY}"
@@ -22,4 +25,3 @@ resource "aws_instance" "example_inst222" {
 	subnet_id = "subnet-335ef77b"
 	key_name = "jskim-test"
 }
-
